@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-it arr[100],i,j,position,n,element,choice;
+int arr[100],i,j,position,n,element,choice;
 
 void menu();
 
