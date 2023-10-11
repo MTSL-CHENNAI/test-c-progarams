@@ -6,7 +6,7 @@ int arr[100],i,j,position,n,element,choice;
 
 void menu();
 
-vid insertion(){
+void insertion(){
     printf("ENTER THE POSITION YOU WANT TO ENTER THE ELEMENT");
     scanf("%d",&position);
     position=position-1;
