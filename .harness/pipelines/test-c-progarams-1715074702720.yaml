@@ -29,7 +29,7 @@ pipeline:
                   type: Run
                   description: build
           platform:
-            os: Windows
+            os: Linux
             arch: Arm64
           runtime:
             type: Docker
