@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_MTSL_CHENNAI_test_c_progarams_1715074709013
+  name: Build test-c-progarams
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1715074016922
+        repoName: MTSL-CHENNAI/test-c-progarams
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Docker
+        type: CI
