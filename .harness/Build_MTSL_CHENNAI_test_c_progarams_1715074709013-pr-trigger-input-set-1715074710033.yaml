@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_MTSL_CHENNAI_test_c_progarams_1715074709013-pr-trigger-input-set
+  identifier: Build_MTSL_CHENNAI_test_c_progarams_1715074709013prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_MTSL_CHENNAI_test_c_progarams_1715074709013
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
